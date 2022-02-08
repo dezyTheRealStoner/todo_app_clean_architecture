@@ -1,5 +1,9 @@
 {
-  "LogIn": "Log in",
+  "signIn": "Sign in",
   "LogOut": "Log out",
-  "register": "Register"
+  "signInDescription": "Sign in with your Google account to be able to manage your account from different devices",
+  "signInWithGoogle" : "Sign in with Google",
+  "or": "or",
+  "continueWithOutGoogle": "Continue without registration",
+  "languageNow": "English"
 }

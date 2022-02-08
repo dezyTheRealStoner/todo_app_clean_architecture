@@ -4,7 +4,7 @@ class AppTheme {
   static const TextTheme _textTheme = TextTheme(
     headline1: TextStyle(
       fontSize: 48,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
     ),
     headline2: TextStyle(
       fontSize: 24,
@@ -31,7 +31,7 @@ class AppTheme {
       fontWeight: FontWeight.w300,
     ),
     subtitle2: TextStyle(
-      fontSize: 14,
+      fontSize: 16,
       fontWeight: FontWeight.w300,
     ),
     bodyText1: TextStyle(
@@ -39,7 +39,7 @@ class AppTheme {
       fontWeight: FontWeight.w300,
     ),
     bodyText2: TextStyle(
-      fontSize: 14,
+      fontSize: 16,
       fontWeight: FontWeight.w400,
     ),
   );
