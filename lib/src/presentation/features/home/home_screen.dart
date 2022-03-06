@@ -8,19 +8,54 @@ class HomeScreen extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
-      body: Center(
+      backgroundColor: theme.backgroundColor,
+      body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('home'),
+            Container(
+              width: screenSize.width,
+              color: Colors.white,
+              child: Text(
+                'Hello, User',
+                style: theme.textTheme.headline4!
+                    .copyWith(color: theme.colorScheme.onPrimary),
+              ),
+            ),
+            Expanded(
+              child: ListView.builder(
+                scrollDirection: Axis.vertical,
+                shrinkWrap: true,
+                itemCount: 25,
+                itemBuilder: (context, index) {
+                  return Card(
+                    child: Text('Todo #$index'),
+                  );
+                },
+              ),
+            ),
+            Column(
+              children: [
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'add todo',
+                    style: theme.textTheme.subtitle1,
+                  ),
+                ),
+              ],
+            ),
+            const Text('select day'),
             ElevatedButton(
-              onPressed: () async {
-                await cubit(context)!.onLogOut();
-                await Future.delayed(const Duration(seconds: 1));
+              onPressed: () {
+                cubit(context)!.onLogOut();
                 Navigator.pushReplacementNamed(context, '/');
               },
-              child: const Text('Log out'),
+              child: const Text('logout'),
             ),
           ],
         ),

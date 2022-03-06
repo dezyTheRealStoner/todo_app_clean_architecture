@@ -88,7 +88,7 @@ class AppTheme {
       primaryVariant: const Color.fromRGBO(255, 105, 0, 0.67),
       onPrimary: Colors.black,
       secondary: Colors.white,
-      secondaryVariant: Colors.grey.shade900,
+      secondaryVariant: Colors.grey,
       onSecondary: const Color.fromRGBO(196, 196, 196, 1),
       surface: const Color.fromRGBO(134, 115, 225, 1),
       onSurface: const Color.fromRGBO(156, 255, 93, 1),

@@ -1,11 +1,25 @@
 {
-  "signIn": "Войти",
-  "LogOut": "Выйти",
+  "login": "Авторизуйтесь",
+  "logOut": "Выйти",
   "register": "Зарегистрироваться",
-  "signInDescription": "Войдите с помощью вашего Google аккаунта чтобы иметь возможность управлять Вашим аккаунтом с разных устройств",
-  "signInWithGoogle" : "Войти с помощью Google",
+  "loginDescription": "Авторизуйтесь c помощью Google, Apple или Facebook чтобы иметь возможность управлять Вашим аккаунтом с разных устройств",
+  "registerDescription" : "Зарегистрируйтесь чтобы иметь возможность управлять Вашим аккаунтом с разных устройств",
+  "signInWithGoogle": "Войти с помощью Google",
+  "signInWithApple": "Войти с помощью Apple",
+  "signInWithFacebook": "Войти с помощью Facebook",
   "or": "или",
   "continueWithOutGoogle": "Продолжить без регистрации",
-  "languageNow": "Русский"
-
+  "languageNow": "Русский",
+  "doYouHaveAccount": "У Вас есть аккаунт?",
+  "dontHaveAccount": "До сих пор нет аккаунта?",
+  "registerNow": "Зарегистрироваться сейчас",
+  "email" : "Электронная почта",
+  "password": "Пароль",
+  "name": "Имя",
+  "repeatPassword": "Повторите пароль",
+  "validateEmailError": "Электронная почта введена не корректно",
+  "validateNameError": "Имя должно содеражть от 3 до 64 символов",
+  "validatePasswordError": "Пароль должен содержать как минимум 6 символов, одну большую букву и один символ",
+  "validateRepeatPasswordError": "Пароли не совпадают",
+  "allFieldIsRequired" : "Все поля обязательны для заполнения"
 }
