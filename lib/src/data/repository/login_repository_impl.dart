@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:todo_app_clean_acrhitechture/src/data/firebase/auth_data_source.dart';
+import 'package:todo_app_clean_acrhitechture/src/data/firebase/login_data_source.dart';
 import 'package:todo_app_clean_acrhitechture/src/data/network/mappers/dio_error_mapper.dart';
-import 'package:todo_app_clean_acrhitechture/src/domain/repository/auth_repository.dart';
+import 'package:todo_app_clean_acrhitechture/src/domain/repository/login_repository.dart';
 
-@LazySingleton(as: AuthRepository)
-class AuthRepositoryImpl extends AuthRepository {
+@LazySingleton(as: LoginRepository)
+class AuthRepositoryImpl extends LoginRepository {
   AuthRepositoryImpl(
     this._authDataSource,
     this._dioErrorMapper,
@@ -15,7 +15,7 @@ class AuthRepositoryImpl extends AuthRepository {
   final DioErrorMapper _dioErrorMapper;
 
   @override
-  Future<void> signInWithGoogle() async {
+  Future<void> logInWithGoogle() async {
     try {
       await _authDataSource.signInWithGoogle();
     } on DioError catch (error) {
@@ -24,8 +24,15 @@ class AuthRepositoryImpl extends AuthRepository {
   }
 
   @override
-  Future<void> anonymousSignIn() async {
-    await _authDataSource.anonymousSignIn();
+  Future<void> logInWithApple() {
+    // TODO: implement logInWithApple
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> logInWithFacebook() {
+    // TODO: implement logInWithFacebook
+    throw UnimplementedError();
   }
 
   @override

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app_clean_acrhitechture/src/presentation/base/cubit/host_cubit.dart';
+import 'package:todo_app_clean_acrhitechture/src/presentation/features/login/login_cubit.dart';
+import 'package:todo_app_clean_acrhitechture/src/presentation/features/login/login_screen.dart';
 import 'package:todo_app_clean_acrhitechture/src/presentation/features/home/home_cubit.dart';
 import 'package:todo_app_clean_acrhitechture/src/presentation/features/home/home_screen.dart';
-import 'package:todo_app_clean_acrhitechture/src/presentation/features/log_in/log_in_cubit.dart';
-import 'package:todo_app_clean_acrhitechture/src/presentation/features/log_in/log_in_screen.dart';
 import 'package:todo_app_clean_acrhitechture/src/presentation/features/splash/splash_cubit.dart';
 import 'package:todo_app_clean_acrhitechture/src/presentation/features/splash/splash_screen.dart';
 
@@ -20,8 +20,8 @@ final _routes = <String, Widget Function(BuildContext)>{
   Routes.splash: (context) => const HostCubit<SplashCubit>(
         child: SplashScreen(),
       ),
-  Routes.login: (context) => const HostCubit<LogInCubit>(
-        child: LogInScreen(),
+  Routes.login: (context) => const HostCubit<LoginCubit>(
+        child: LoginScreen(),
       ),
   Routes.registration: (context) => Container(),
   Routes.home: (context) => const HostCubit<HomeCubit>(

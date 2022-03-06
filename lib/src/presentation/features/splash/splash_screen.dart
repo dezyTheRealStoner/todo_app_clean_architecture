@@ -6,6 +6,8 @@ class SplashScreen extends StatelessWidget
     with CubitHelper<SplashCubit, SplashState> {
   const SplashScreen({Key? key}) : super(key: key);
 
+  static const screenName = '/';
+
   @override
   Widget build(BuildContext context) {
     cubit(context)!.checkUserLogInState();
